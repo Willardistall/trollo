@@ -1,0 +1,7 @@
+<h1>Click a list To View Content</h1>
+<%= link_to 'Create a new list', new_board_list_path(@board) %>
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, [@board, list] %></li>
+  <% end %>
+</ul>

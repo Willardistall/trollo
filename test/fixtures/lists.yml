@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  list_name: MyString
+  type: 
+  board: one
+
+two:
+  list_name: MyString
+  type: 
+  board: two

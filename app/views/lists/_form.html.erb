@@ -1,0 +1,10 @@
+<h1><%= @list.id ? 'Edit list' : 'Create list' %></h1>
+<hr />
+<%= form_for [@board, @list] do |f| %>
+  <%= f.label :list_name %>
+  <%= f.text_field :list_name, required: true, autofocus: true %>
+  <br />
+  <%= f.label :type %>
+  <%= f.text_area :type, required: true %>
+  <%= f.submit %>
+<% end %>
