@@ -2,8 +2,6 @@
 <h2>Welcome <%= current_user.first_name %></h2>
 <% @boards.each do |board| %>
   <div>
-    <h3>
-      <%= link_to board.board_name, board_path(board) %>
-    </h3>
+    <%= link_to board.board_name, board_path(board) %>
   </div>
 <% end %>

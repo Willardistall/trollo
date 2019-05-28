@@ -9,7 +9,7 @@ class BoardsController < ApplicationController
   end
 
   def new
-    @board = Board.new
+    @board = Board.new  
   end
 
   def edit

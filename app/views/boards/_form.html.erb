@@ -1,3 +1,5 @@
+<h1><%= @board.id ? 'Edit Board' : 'Create Board' %></h1>
+<hr />
 <%= form_with(model: @board, local: true, class: "ui form") do |f| %>
   <div class="field">
     <%= f.label :board_name %>
